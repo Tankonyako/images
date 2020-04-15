@@ -3,9 +3,9 @@
 # Environment: Java (glibc support)
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM        openjdk:8-jre-slim
+FROM        oracle/graalvm-ce:19.3.1-java8
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL       author="Kira Khomenko" maintainer="parker@pterodactyl.io"
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
