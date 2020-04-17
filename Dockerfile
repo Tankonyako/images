@@ -7,8 +7,8 @@ FROM        oracle/graalvm-ce:19.3.1-java8
 
 LABEL       author="Kira Khomenko" maintainer="parker@pterodactyl.io"
 
-RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+RUN yum instal update -y \
+ && yum instal install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
  && useradd -d /home/container -m container
  
 USER container
